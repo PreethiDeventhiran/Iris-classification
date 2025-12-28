@@ -1,102 +1,85 @@
-# 🏠 House Price Prediction using Machine Learning
+🌸 Iris Flower Classification using Machine Learning
+📌 Project Overview
 
-## Project Overview
+This project implements a machine learning classification model to predict the species of an Iris flower based on its physical measurements.
+The dataset contains measurements of sepal length, sepal width, petal length, and petal width, and the goal is to classify the flower into one of three species:
 
-This project focuses on building a regression-based machine learning model to predict house prices using various property-related features such as size, location, and other attributes.
+Iris-setosa
 
-The project demonstrates an end-to-end machine learning workflow including data preprocessing, feature engineering, model training, evaluation, and prediction.  
-It was developed as part of a Machine Learning Internship task.
+Iris-versicolor
 
----
+Iris-virginica
 
-## Problem Statement
+This project is part of my Machine Learning Internship and demonstrates the complete ML workflow from data loading to model evaluation.
 
-House prices are influenced by multiple factors and often exhibit non-linear behavior.  
-The objectives of this project are to:
+🧠 Problem Statement
 
-- Analyze the housing dataset
-- Handle missing values appropriately
-- Perform feature transformation and encoding
-- Train and compare multiple regression models
-- Evaluate models using suitable performance metrics
-- Demonstrate predictions on new, unseen data
+Given numerical features of an Iris flower, predict its correct species using a supervised learning algorithm.
 
----
+📊 Dataset
 
-## Dataset
+Source: Scikit-learn built-in Iris dataset
 
-- **Source:** Kaggle  
-- **Link:** https://www.kaggle.com/datasets/bhanupratapbiswas/house-price-prediction  
+Total samples: 150
 
-Each row represents a house, and each column represents a feature affecting house price.  
-The target variable is the **house price**.
+Features:
 
----
+Sepal Length
 
-## Technologies Used
+Sepal Width
 
-- Python  
-- Pandas, NumPy  
-- Matplotlib, Seaborn  
-- Scikit-learn  
-- Jupyter Notebook  
+Petal Length
 
----
+Petal Width
 
-## Project Workflow
+Target Classes: 3 (Setosa, Versicolor, Virginica)
 
-### 1. Data Loading
-- Loaded the dataset using Pandas
-- Inspected data structure, data types, and basic statistics
+⚙️ Technologies Used
 
-### 2. Exploratory Data Analysis (EDA)
-- Checked for missing values
-- Analyzed feature distributions
-- Studied the distribution of the target variable
+Python
 
-### 3. Data Preprocessing
-- Handled missing values using statistical methods
-- Applied log transformation to the target variable to reduce skewness
-- Encoded categorical features using One-Hot Encoding
-- Scaled numerical features using StandardScaler
+Jupyter Notebook
 
-### 4. Feature Engineering
-- Separated numerical and categorical features
-- Used `ColumnTransformer` and `Pipeline` for clean and reproducible preprocessing
+NumPy
 
-### 5. Model Training
-The following regression models were trained and compared:
-- Linear Regression
-- Random Forest Regressor
-- Gradient Boosting Regressor
+Pandas
 
-### 6. Model Evaluation
-Models were evaluated using:
-- Mean Absolute Error (MAE)
-- Root Mean Squared Error (RMSE)
+Matplotlib / Seaborn
 
-Residual analysis was also performed to examine prediction behavior.
+Scikit-learn
 
-### 7. Model Selection
-Gradient Boosting Regressor showed the best performance based on evaluation metrics and was selected as the final model.
+🔄 Project Workflow
 
-### 8. Model Saving
-The trained model was saved using `joblib` to allow reuse without retraining.
+Imported required libraries
 
-### 9. Prediction
-The saved model was used to demonstrate house price prediction on new input data.
+Loaded the Iris dataset
 
----
+Converted data into Pandas DataFrame
 
-## Evaluation Metrics Explained
+Performed exploratory data analysis (EDA)
 
-- **MAE (Mean Absolute Error):**  
-  Measures the average absolute difference between actual and predicted prices.
+Split data into training and testing sets
 
-- **RMSE (Root Mean Squared Error):**  
-  Penalizes larger errors more heavily and is sensitive to outliers.
+Trained a Logistic Regression classifier
 
----
+Evaluated the model using accuracy score
 
-## Project Structure
+Tested predictions on unseen data
+
+📈 Model Used
+
+Logistic Regression
+
+Simple and effective for multiclass classification
+
+Achieved 100% accuracy on the test dataset
+
+Note: High accuracy is expected for Iris dataset due to its simplicity and clean separation of classes.
+
+✅ Results
+
+Accuracy: 1.0 (100%)
+
+Model successfully classified all test samples correctly.
+
 
